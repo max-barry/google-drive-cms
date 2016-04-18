@@ -7,7 +7,7 @@
         "caption": "Add the Google Drive CMS template to your Google Drive"
     }, {
         "title": "Create headers for your content",
-        "deck": "<p>Each header you add to the <em>CMS</em> sheet within your new Spreadsheet will be a key sent to your endpoint as JSON. Think of these headers like field names in a database, or keys in an object.</p><p>For example, a Spreadsheet that looks like this:</p><table class=\"instruction__fake_table\"><thead><tr><th>Name</th><th>Email</th></tr></thead><tbody></tbody></table><br>Will create generate JSON that looks like this:<pre class=\"instruction__fake_json\"><code></code></pre>",
+        "deck": "<p>Each header you add to the <em>CMS</em> sheet within your new Spreadsheet will be a key sent to your endpoint as JSON.<br>Think of these headers like field names in a database, or keys in an object.</p><span class=\"hide-on-small-only\"><p>For example, a Spreadsheet that looks like this:</p><table class=\"instruction__fake_table\"><thead><tr><th>Name</th><th>Email</th></tr></thead><tbody></tbody></table><br>Will create JSON that looks like this:<pre class=\"instruction__fake_json\"><code></code></pre></span>",
         "extra": "<br><a href=\"\">See example Spreadsheet</a>"
     }, {
         "title": "Add an endpoint to the settings",

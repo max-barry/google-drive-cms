@@ -10,3 +10,13 @@ var AddToDrive = require("./addToDrive.js");
 
 // When user clicks an "add to drive" button, add a copy of the base template to their Google Drive
 $("body").on("click", "[data-add-to-drive]", AddToDrive);
+
+// Materialize scrollFire
+var options = [{
+    selector: '.next_steps',
+    offset: 300,
+    callback: function() {
+        Materialize.showStaggeredList('#nextSteps');
+    }
+}, ];
+Materialize.scrollFire(options);

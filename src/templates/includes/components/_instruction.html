@@ -1,11 +1,13 @@
-<div class="container row section getting_started__step">
-    <div class="col m1 thin primary-text getting_started__step__number"></div>
-    {% if instruction.img %}
-        <div class="col m5"><img class="responsive-img materialboxed" src="{{instruction.img}}" data-caption="{{instruction.caption}}" alt="Add the Google Drive CMS template to your Google Drive"></div>
-    {% endif %}
-    <div class="col {% if instruction.img %}m6{% else %}m11{% endif %}">
-        <h5>{{instruction.title}}</h5>
-        {{instruction.deck|safe}}
-        {{instruction.extra|safe}}
+<div class="row getting_started__step section-padding --no-margin">
+    <div class="container">
+        <div class="col l1 thin primary-text getting_started__step__number hide-on-med-and-down"></div>
+        {% if instruction.img %}
+            <div class="col m5"><img class="responsive-img materialboxed" src="{{instruction.img}}" data-caption="{{instruction.caption}}" alt="Add the Google Drive CMS template to your Google Drive"></div>
+        {% endif %}
+        <div class="col {% if instruction.img %}m6{% else %}m11 l9{% endif %}">
+            <h5>{{instruction.title}}</h5>
+            {{instruction.deck|safe}}
+            {{instruction.extra|safe}}
+        </div>
     </div>
 </div>

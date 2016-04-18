@@ -2,6 +2,6 @@
     "footer": [
         { "title": "Documentation", "url": "" },
         { "title": "Project on Github", "url": "", "blank": true },
-        { "title": "About the author", "url": "https://mxbry.com", "blank": true }
+        { "title": "More by mxbry.com", "url": "https://mxbry.com", "blank": true }
     ]
 }

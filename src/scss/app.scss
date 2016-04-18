@@ -51,6 +51,7 @@ Custom imports
 */
 @import "math";
 @import "mixins";
+@import "typed";
 
 /**
 Custom resets
@@ -101,6 +102,9 @@ html {
 
 .section-padding {
     padding: $master-padding 0;
+    @media #{$small-and-down} {
+        padding: $master-padding*0.5 0;
+    }
 }
 
 .--hover-underline:hover {
@@ -112,21 +116,17 @@ pre {
     background-color: #f5f2f0;
 }
 
-@media #{$small-and-down} {
-    [data-mobile-copy] {
-        text-indent: -999px;
-        &:after {
-            content: attr(data-mobile-copy);
-        }
-    }
-}
-
 .vam {
     vertical-align: middle;
 }
 
 .--no-margin {
     margin: 0;
+}
+
+header svg {
+    height: 32px;
+    vertical-align: middle;
 }
 
 /**
@@ -170,7 +170,7 @@ SECTIONS
 }
 
 .feature__image {
-    $dim: 300px;
+    $dim: 180px;
     height: $dim;
     width: $dim;
     // background-color: $grey-light;
@@ -185,14 +185,34 @@ SECTIONS
     }
 }
 
+@media #{$small-and-down} {
+    .feature { text-align: left; }
+    .feature__image {
+        $mobileDim: 32px;
+        float: left;
+        margin-right: 15px;
+        height: $mobileDim;
+        width: $mobileDim;
+        position: relative;
+        top: 0.5*$mobileDim;
+        background-color: transparent;
+        background-size: contain;
+    }
+    .feature h5 {
+        display: block;
+        margin-top: 15px;
+    }
+
+}
+
 // Gettings Started
 .getting_started {
     counter-reset: getting_started;
 }
 .getting_started__step {
     counter-increment: getting_started;
-    &:first-child {
-        padding-top: $master-padding;
+    &:nth-child(2) {
+        background-color: #fafafa;
     }
     .warn-text i {
         margin-right: 15px;
@@ -233,16 +253,18 @@ SECTIONS
 
 // Next steps
 .next_steps {
-    // height: 50vh;
     .divider {
         margin-top: 0.5*$master-padding;
         margin-bottom: 0.5*$master-padding;
     }
+    ul li { opacity: 0; }
 }
-.next_steps__wrapper.valign {
-    display: flex;
-}
-.next_steps__wrapper, .next_steps {
-    align-items: flex-end;
+@media #{$medium-and-up} {
+    .next_steps__wrapper.valign {
+        display: flex;
+    }
+    .next_steps__wrapper, .next_steps {
+        align-items: flex-end;
+    }
 }
 
