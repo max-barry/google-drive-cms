@@ -1,0 +1,13 @@
+Check all hrefs
+Wire up newsletter to mailchimp
+Add "medium article" link to next steps
+Wire up the navigation header links
+Fixed header?
+Instruction images
+Edith the endpoint of the template i just created (put it in an accordion)
+Mobile / tablet mode
+Documentation
+Write medium article
+Write firebase example
+Logo for top left (drive icon > webpage)
+Amp up parralax

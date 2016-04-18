@@ -49,9 +49,11 @@ var setLoading = function() {
 
 var setSuccess = function() {
     var targetUrl = "https://docs.google.com/spreadsheets/d/" + window.generatedFileId.id;
+    
     $(".add_to_drive").html("").append(
         $(successMsg).attr("href", targetUrl)
     );
+    
     Materialize.toast('New CMS template added to your Google Drive!', 4000);
 };
 
@@ -59,6 +61,7 @@ var setError = function(msg) {
     msg = "this is all of the test stuff that I could ut in to the error message on the site";
     
     $(".add_to_drive").html("").append(errorMsg);
+    
     $("body").append(
         $(modalTemplate)
             .find(".modal-content pre").html(msg).end()
@@ -78,9 +81,8 @@ var main = function() {
     window.$trigger = $(this);
     window.$triggerWrap = $trigger.parent();
 
-    setError();
-    // setLoading();
-    // authorize();
+    setLoading();
+    authorize();
 };
 
 module.exports = main;
