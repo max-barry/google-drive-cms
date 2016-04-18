@@ -1,0 +1,73 @@
+/**
+Math functions provided by Sass-Math
+@link https://github.com/adambom/Sass-Math/blob/master/math.scss
+*/
+
+@function power($x, $n) {
+    /**
+    Editor note:
+    Modified to handle indicies of 0
+    */
+    $ret: 1;
+    @if $n > 0 {
+        @for $i from 1 through $n {
+            $ret: $ret * $x;
+        }
+    }
+    @else {
+        @for $i from $n to 0 {
+            $ret: $ret / $x;
+        }
+    }
+    @return $ret;
+}
+
+@function factorial($x) {
+    $ret: 1;
+    @if $x > 0 {
+        @while $x > 0 {
+            $ret: $ret * $x;
+            $x: $x - 1;
+        }
+    }
+    @return $ret;
+}
+
+@function sin($x) {
+    $ret: 0;
+    @for $n from 0 to 25 {
+        $ret: $ret + power(-1, $n) * power($x, 2 * $n + 1) / factorial(2 * $n + 1);
+    }
+    @return $ret;
+}
+
+@function cos($x) {
+    $ret: 0;
+    @for $n from 0 to 25 {
+        $ret: $ret + power(-1, $n) * power($x, 2 * $n) / factorial(2 * $n);
+    }
+    @return $ret;
+}
+
+@function exp($x) {
+    $ret: 0;
+    @for $n from 0 to 25 {
+        $ret: $ret + power($x, $n) / factorial($n);
+    }
+    @return $ret;
+}
+
+@function ln($x) {
+    $ret: 0;
+    $n: 1;
+    $dx: 0.001;
+    @while $n <= $x {
+        $ret: $ret + $dx / $n;
+        $n: $n + $dx;
+    }
+    @return $ret;
+}
+
+@function sqrt($x) {
+    @return exp(0.5 * ln($x));
+}

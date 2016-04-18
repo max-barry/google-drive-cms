@@ -1,0 +1,67 @@
+{#
+Twitter - https://dev.twitter.com/cards/overview
+N.B. All cards require validation. Visit https://cards-dev.twitter.com/validator and validate your site
+     Some cards require additional markup or different image dimensions. See twitter_cards for more details.
+
+title - required - max. 70 chars.
+description - required - max. 200 chars.
+
+site - @username of website
+site:id - Twitter ID of site account
+
+creator - @username of content creator
+creator:id - Twitter ID of creator account
+
+url - required - Canonical URL of page being shared
+domain - Base domain of URL
+card (card type) - required - summary, summary_large_image, photo, gallery, app, player, product
+
+image:src - target 1000x1000 - Absolute URL
+image:width - min. dim. 120x120
+image:height - min. dim. 120x120
+#}
+
+<meta name="twitter:title" content="{{meta.title}}">
+<meta name="twitter:description" content="{{meta.description}}">
+
+<meta name="twitter:site" content="">
+<meta name="twitter:site:id" content="">
+<meta name="twitter:creator" content="">
+<meta name="twitter:creator:id" content="">
+
+<meta name="twitter:url" content="">
+<meta name="twitter:domain" content="{{meta.baseurl}}">
+<meta name="twitter:card" content="summary">
+
+<meta name="twitter:image" content="">
+
+{#
+Facebook - https://developers.facebook.com/docs/opengraph/creating-custom-stories/#objecttypes-properties
+
+title
+description
+
+url - Canonical URL of the page the tag is placed on
+site_name - Human readable name of site
+image - Min. dim. 600x315. Recommend dim. 1200x630 - Recommend aspect ratio 1.91:1 - Max size 5MB - Absolute URL
+
+type - https://developers.facebook.com/docs/reference/opengraph/ - e.g. website or article
+
+locale - Language locale of the page - Default en_US
+
+restrictions - Restrictions applied to the page (age, country, content, etc) - https://developers.facebook.com/docs/opengraph/using-actions/v2.2#userrestrictions
+
+see_also - Additional related links to the page
+ttl - Number of seconds before the page is re-scraped - Default 7 days
+#}
+
+<meta property="og:title" content="{{meta.title}}">
+<meta property="og:description" content="{{meta.description}}">
+<meta property="og:url" content="">
+<meta property="og:site_name" content="{{meta.title}}">
+<meta property="og:image" content="">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:restrictions" content="">
+<meta property="og:video" content="">
+<meta property="og:see_also" content="">

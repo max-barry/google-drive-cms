@@ -1,0 +1,10 @@
+{
+  "name": "google-drive-cms",
+  "version": "0.0.1",
+  "private": "true",
+  "dependencies": {
+    "bourbon": "^4.0.1",
+    "Scut": "scut#^1.2.1",
+    "Materialize": "materialize#^0.97.6"
+  }
+}

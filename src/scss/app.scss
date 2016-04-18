@@ -1,0 +1,248 @@
+/**
+VENDOR
+*/
+@import "bourbon";
+@import "scut";
+
+/**
+MATERIALIZE
+*/
+// Mixins
+@import "components/mixins";
+@import "components/color";
+
+// Variables;
+@import "settings"; // Our custom settings file
+@import "components/variables";
+
+// Reset
+@import "components/normalize";
+
+// components
+@import "components/global";
+@import "components/icons-material-design";
+@import "components/grid";
+@import "components/navbar";
+@import "components/roboto";
+@import "components/typography";
+// @import "components/cards";
+@import "components/toast";
+// @import "components/tabs";
+// @import "components/tooltip";
+@import "components/buttons";
+@import "components/dropdown";
+@import "components/waves";
+@import "components/modal";
+@import "components/collapsible";
+// @import "components/chips";
+@import "components/materialbox";
+@import "components/forms/forms";
+// @import "components/table_of_contents";
+// @import "components/sideNav";
+@import "components/preloader";
+// @import "components/slider";
+// @import "components/carousel";
+// @import "components/date_picker/default";
+// @import "components/date_picker/default.date";
+// @import "components/date_picker/default.time";
+
+/**
+Custom imports
+*/
+@import "math";
+@import "mixins";
+
+/**
+Custom resets
+*/
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.primary {
+    background-color: $primary-color;
+}
+.primary-text {
+    color: $primary-color;
+}
+.accent {
+    background-color: $secondary-color;
+}
+.accent-text {
+    color: $secondary-color;
+}
+.success-text {
+    color: $success-color;
+}
+.success {
+    background-color: $success-color;
+    &.btn:hover, &.btn-large:hover {
+        background-color: lighten($success-color, 5%);
+
+    }
+}
+.warn-text {
+    color: $error-color;
+}
+.warn {
+    background-color: $error-color;
+    &.btn-large, &.btn {
+        &:hover, &:active, &:focus {
+            background-color: lighten($error-color, 5%);
+        }
+    }
+}
+
+.--thick { font-weight: 700; }
+
+.section-padding {
+    padding: $master-padding 0;
+}
+
+.--hover-underline:hover {
+    border-bottom: 1px solid;
+}
+
+pre {
+    padding: 20px;
+    background-color: #f5f2f0;
+}
+
+@media #{$small-and-down} {
+    [data-mobile-copy] {
+        text-indent: -999px;
+        &:after {
+            content: attr(data-mobile-copy);
+        }
+    }
+}
+
+.vam {
+    vertical-align: middle;
+}
+
+.--no-margin {
+    margin: 0;
+}
+
+/**
+SECTIONS
+    1) Hero
+    2) Features
+    3) Getting Started
+    4) Next Steps
+*/
+// Hero
+.hero {
+    height: 75vh;
+    position: relative;
+    &:before {
+        content: "";
+        background-color: rgba(0, 0, 0, 0.15);
+        @include fill;
+    }
+}
+.hero__wrapper {
+    z-index: 1;
+}
+.hero__title {
+    font-weight: 600;
+}
+@media #{$small-and-down} {
+    .hero {
+        height: auto;
+        width: 100%;
+        padding: $master-padding 0;
+    }
+    .hero__subtitle br {
+        display: none;
+    }
+}
+
+// Features
+.feature {
+    margin-top: $master-padding*0.5;
+    // margin-bottom: $master-padding*0.5;
+}
+
+.feature__image {
+    $dim: 300px;
+    height: $dim;
+    width: $dim;
+    // background-color: $grey-light;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+    margin: 0 auto;
+    @for $i from 1 through 3 {
+        .feature:nth-child(#{$i}) & {
+            background-image: url("/img/google-drive-cms-#{$i}.svg");
+        }
+    }
+}
+
+// Gettings Started
+.getting_started {
+    counter-reset: getting_started;
+}
+.getting_started__step {
+    counter-increment: getting_started;
+    &:first-child {
+        padding-top: $master-padding;
+    }
+    .warn-text i {
+        margin-right: 15px;
+    }
+    &.--final {
+        min-height: 25vh;
+        background-image: url("/img/howto__publish.gif");
+        background-repeat: no-repeat;
+        background-position: top right;
+        position: relative;
+        @media #{$small-and-down} {
+            background-position: top center;
+        }
+        &:before {
+            content: "";
+            background-image: linear-gradient(90deg, rgb(238, 238, 238) 40%, transparent 70%);
+            @include fill;
+        }
+        .container {
+            z-index: 1;
+        }
+        h3:before {
+            content: counter(getting_started) '.';
+            margin-right: 15px;
+            font-weight: 200;
+            @media #{$small-and-down} {
+                display: block;
+            }
+        }
+    }
+}
+.getting_started__step__number {
+    font-size: 2vw;
+    &:before {
+        content: counter(getting_started) '.';
+    }
+}
+
+// Next steps
+.next_steps {
+    // height: 50vh;
+    .divider {
+        margin-top: 0.5*$master-padding;
+        margin-bottom: 0.5*$master-padding;
+    }
+}
+.next_steps__wrapper.valign {
+    display: flex;
+}
+.next_steps__wrapper, .next_steps {
+    align-items: flex-end;
+}
+

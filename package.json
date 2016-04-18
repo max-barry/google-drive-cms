@@ -1,0 +1,81 @@
+{
+  "name": "google-drive-cms",
+  "title": "google drive cms",
+  "description": "",
+  "version": "0.0.1gi",
+  "keywords": [],
+  "devDependencies": {
+    "autoprefixer": "^6.2.0",
+    "cssnano": "^2.2.0",
+    "grunt": "~0.4.2",
+    "grunt-cache-bust": "^0.6.0",
+    "grunt-contrib-jshint": "^0.11.0",
+    "grunt-sass": "^1.1.0",
+    "grunt-contrib-watch": "^0.6.0",
+    "grunt-contrib-copy": "^0.8.0",
+    "grunt-contrib-connect": "^0.11.0",
+    "grunt-contrib-imagemin": "^1.0.0",
+    "grunt-docco": "^0.4.0",
+    "grunt-contrib-clean": "^0.7.0",
+    "grunt-html": "^5.0.1",
+    "grunt-modernizr": "^1.0.1",
+    "grunt-prettify": "^0.4.0",
+    "grunt-postcss": "^0.7.1",
+    "grunt-swig-templates": "^0.1.4",
+    "grunt-surge": "^0.6.2",
+    "grunt-bump": "^0.3.1",
+    "grunt-webpack": "^1.0.11",
+    "webpack-dev-server": "^1.14.0",
+    "webpack": "^1.12.9",
+    "webp-bin": "~0.1.4",
+    "grunt-webp": "^0.0.4",
+    "pixrem": "^1.3.1",
+    "grunt-combine-media-queries": "^1.0.19",
+    "time-grunt": "^1.3.0",
+    "lodash": "^3.10.1",
+    "load-grunt-config": "^0.19.1",
+    "jit-grunt": "^0.9.1"
+  },
+  "author": {
+    "name": ""
+  },
+  "main": "Gruntfile.js",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "license": "MIT",
+  "readmeFilename": "Readme.md",
+  "paths": {
+    "project": "./src/",
+    "templates": "./src/templates/",
+    "build": "./build/",
+    "tmp": "./tmp/",
+    "bower": "./bower_components/",
+    "node": "./node_modules/"
+  },
+  "build": {
+    "js": "./build/js/",
+    "fonts": "./build/fonts/",
+    "images": "./build/img/",
+    "css": "./build/css/"
+  },
+  "src": {
+    "js": "./src/js/",
+    "scss": "./src/scss/",
+    "fonts": "./src/fonts/",
+    "images": "./src/img/"
+  },
+  "templates": {
+    "pages": "./src/templates/pages/",
+    "includes": "./src/templates/includes/",
+    "data": "./src/templates/data/",
+    "layouts": "./src/templates/layouts/"
+  },
+  "dependencies": {
+    "faker": "^3.1.0",
+    "html-loader": "^0.4.3",
+    "jquery": "^2.2.3",
+    "materialize-css": "^0.97.6"
+  }
+}

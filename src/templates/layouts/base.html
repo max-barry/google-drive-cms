@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{{meta.title}}</title>
+    <meta name="description" content="{{meta.description}}">
+    <meta name="keywords" content="{{meta.keywords}}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {% include "./includes/socialmeta.html" %}
+
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/css/app.css">
+    <link rel="stylesheet" href="/css/fonts.css">
+
+    <script src="/js/modernizr.min.js"></script>
+
+</head>
+
+<body>
+
+{% include "./includes/header.html" %}
+
+{% block content %}{% endblock %}
+
+{% include "./includes/footer.html" %}
+
+<script src="https://apis.google.com/js/client.js"></script>
+<script src="/js/app.js"></script>
+{% block extrajs %}{% endblock %}
+
+</body>
+
+</html>

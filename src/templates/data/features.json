@@ -1,0 +1,15 @@
+[
+    {
+        "title": "Easy",
+        "mobileTitle": "Easy",
+        "deck": "Create content for your website or app in an environment millions use every day."
+    },
+    {
+        "title": "Secure",
+        "deck": "Google Drive's <a href='https://support.google.com/drive/answer/2494822?hl=en' target='_blank'>share settings</a> form the backbone of authenticating CMS admins."
+    },
+    {
+        "title": "Flexible",
+        "deck": "Use <a href='/' target='_blank'>customisable settings</a> to publish your content to an endpoint and format of your choosing."
+    }
+] 

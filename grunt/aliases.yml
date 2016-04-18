@@ -1,0 +1,45 @@
+default: []
+
+base:
+  description: "For common tasks shared between development and production builds"
+  tasks:
+    - "swig"
+    - "jshint"
+    - "sass"
+
+build:
+  description: "Development environment build"
+  tasks:
+    - "base"
+    - "webpack:js_dev"
+    - "copy"
+
+dist:
+  description: "Production build"
+  tasks:
+    - "clean"
+    - "base"
+    - "webpack:js"
+    - "prettify"
+    - "cmq"
+    - "postcss"
+    - "copy:fonts"
+    - "imagemin"
+    - "webp"
+
+deploy:
+  description: "Deploy the build to a Surge.sh server"
+  tasks:
+    - "dist"
+    - "cacheBust"
+    - "surge"
+
+run:
+  description: "Starts a development server"
+  tasks:
+    - "connect"
+
+serve:
+  description: "Alias for grunt run"
+  tasks:
+    - "run"

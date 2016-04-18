@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve">
+<g id="Layer_2" display="none">
+	<g id="Ring_2_" display="inline">
+		<g>
+			<path fill-rule="evenodd" clip-rule="evenodd" fill="#444444" d="M150.1,1.2c-46.2,0-83.7,37.5-83.7,83.7v83.7
+				c0,25,11,47.4,28.3,62.8c-0.3-2.3-0.4-4.6-0.4-7V84.9c0-30.8,25-55.8,55.8-55.8c30.8,0,55.8,25,55.8,55.8v139.5
+				c0,2.4-0.2,4.7-0.4,7c17.4-15.3,28.3-37.8,28.3-62.8V84.9C233.8,38.7,196.3,1.2,150.1,1.2z"/>
+		</g>
+	</g>
+	<g id="Lock_Shadow_1_" display="inline" opacity="0.102">
+		<g>
+			<path fill-rule="evenodd" clip-rule="evenodd" d="M252.4,131.4h-18.6v-27.9c0-46.2-37.5-83.7-83.7-83.7
+				c-46.2,0-83.7,37.5-83.7,83.7v27.9H47.8c-10.3,0-18.6,8.3-18.6,18.6v130.2c0,10.3,8.3,18.6,18.6,18.6h204.6
+				c10.3,0,18.6-8.3,18.6-18.6V150C271,139.7,262.6,131.4,252.4,131.4z M205.9,187.2c0,30.8-25,55.8-55.8,55.8
+				c-30.8,0-55.8-25-55.8-55.8v-83.7c0-30.8,25-55.8,55.8-55.8c30.8,0,55.8,25,55.8,55.8V187.2z"/>
+		</g>
+	</g>
+	<g id="Lock_1_" display="inline">
+		<g>
+			<path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M252.4,112.8H47.8c-10.3,0-18.6,8.3-18.6,18.6v130.2
+				c0,10.3,8.3,18.6,18.6,18.6h204.6c10.3,0,18.6-8.3,18.6-18.6V131.4C271,121.1,262.6,112.8,252.4,112.8z"/>
+		</g>
+	</g>
+	<g id="Inner_Shadow_1_1_" display="inline" opacity="0.102">
+		<g>
+			<path fill-rule="evenodd" clip-rule="evenodd" d="M252.4,112.8h-18.6v167.4h18.6c10.3,0,18.6-8.3,18.6-18.6V131.4
+				C271,121.1,262.6,112.8,252.4,112.8z"/>
+		</g>
+	</g>
+	<g id="Inner_Shadow_2_1_" display="inline" opacity="5.098039e-002">
+		<g>
+			<rect x="66.4" y="112.8" fill-rule="evenodd" clip-rule="evenodd" width="167.4" height="167.4"/>
+		</g>
+	</g>
+	<g id="Hole_Inner_1_" display="inline">
+		<g>
+			<path fill-rule="evenodd" clip-rule="evenodd" fill="#444444" d="M178,187.2c0-15.4-12.5-27.9-27.9-27.9
+				c-15.4,0-27.9,12.5-27.9,27.9c0,8.8,4.1,16.6,10.4,21.7c-0.7,1.9-1.1,4-1.1,6.2c0,10.3,8.3,18.6,18.6,18.6s18.6-8.3,18.6-18.6
+				c0-2.2-0.4-4.3-1.1-6.2C173.9,203.8,178,196,178,187.2z"/>
+		</g>
+	</g>
+</g>
+<g id="Layer_3">
+	<g id="Diary">
+		<g>
+			<path fill-rule="evenodd" clip-rule="evenodd" fill="#2E4980" d="M197,0H37.4c-8,0-14.5,6.5-14.5,14.5v188.6
+				c0,8,6.5,14.5,14.5,14.5H197c8,0,14.5-6.5,14.5-14.5V14.5C211.5,6.5,205,0,197,0z"/>
+		</g>
+	</g>
+	<g id="Binding" opacity="0.349">
+		<g>
+			<path fill-rule="evenodd" clip-rule="evenodd" d="M37.4,0c-8,0-14.5,6.5-14.5,14.5v188.6c0,8,6.5,14.5,14.5,14.5h29V0H37.4z"/>
+		</g>
+	</g>
+	<g id="Bookmark">
+		<g>
+			<polygon fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" points="138.9,0 138.9,58 157.1,39.9 175.2,58 175.2,0 			"/>
+		</g>
+	</g>
+	<g id="Photo_Shadow_2_" opacity="0.102">
+		<g>
+			<path fill-rule="evenodd" clip-rule="evenodd" d="M263,76.4H107.9c-7.8,0-14.1,6.3-14.1,14.1v197.4c0,7.8,6.3,14.1,14.1,14.1H263
+				c7.8,0,14.1-6.3,14.1-14.1V90.5C277.1,82.7,270.8,76.4,263,76.4z"/>
+		</g>
+	</g>
+	<g id="Document">
+		<g>
+			<path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M263,76.4H107.9c-7.8,0-14.1,6.3-14.1,14.1v183.3
+				c0,7.8,6.3,14.1,14.1,14.1H263c7.8,0,14.1-6.3,14.1-14.1V90.5C277.1,82.7,270.8,76.4,263,76.4z"/>
+		</g>
+	</g>
+	<g id="Text_1_" opacity="0.251">
+		<g>
+			<path fill-rule="evenodd" clip-rule="evenodd" d="M199.5,104.6h-42.3v14.1h42.3V104.6z M157.2,132.8v14.1h98.7v-14.1H157.2z
+				 M157.2,175.1h98.7V161h-98.7V175.1z M157.2,203.3h98.7v-14.1h-98.7V203.3z M157.2,231.5h98.7v-14.1h-98.7V231.5z M157.2,259.7
+				h70.5v-14.1h-70.5V259.7z"/>
+		</g>
+	</g>
+	<g id="Holes">
+		<g>
+			<path fill-rule="evenodd" clip-rule="evenodd" fill="#444444" d="M125.5,132.8c5.8,0,10.6-4.7,10.6-10.6
+				c0-5.8-4.7-10.6-10.6-10.6c-5.8,0-10.6,4.7-10.6,10.6C114.9,128.1,119.7,132.8,125.5,132.8z M125.5,228
+				c-5.8,0-10.6,4.7-10.6,10.6c0,5.8,4.7,10.6,10.6,10.6c5.8,0,10.6-4.7,10.6-10.6C136.1,232.8,131.4,228,125.5,228z"/>
+		</g>
+	</g>
+</g>
+</svg>

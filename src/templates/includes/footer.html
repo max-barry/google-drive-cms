@@ -1,0 +1,39 @@
+<footer class="page-footer">
+    <div class="container">
+        <div class="row white-text">
+            <div class="col m7">
+                <h5>About this project</h5>
+                <p class="light grey-text text-lighten-4">Do you like this project and want to keep up to date on its progress?</p>
+                <form class="row">
+                    <div class="input-field m6 l6 col">
+                        <input id="email" type="email" class="validate">
+                        <label for="email" data-error="Hmm... this email doesn't quite look right">Email</label>
+                    </div>
+                    <div class="input-field m6 l6 col">
+                        <select id="subscribeTo">
+                            <option value="1" selected>Just this project</option>
+                            <option value="2">This and other projects from mxbry.com</option>
+                        </select>
+                        <label id="subscribeTo">Subscribe me to</label>
+                    </div>
+                    <div class="input-field m12 l12 col">
+                          <button class="btn waves-effect waves-light z-depth-0 grey lighten-2 black-text" type="submit" name="action">Subscribe<i class="material-icons right">email</i></button>
+                    </div>
+                </form>
+            </div>
+            <div class="col offset-m1 m4">
+                <h5>Useful links</h5>
+                <ul>
+                    {% for link in navigation.footer %}
+                    <li><a href="{{link.url}}" class="white-text --hover-underline light grey-text text-lighten-4" {% if link.blank %}target="_blank"{% endif %}>&raquo; {{link.title}}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            <a class="grey-text text-lighten-4 --hover-underline" href="">Made by Max</a>
+        </div>
+    </div>
+</footer>

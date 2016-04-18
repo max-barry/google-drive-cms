@@ -1,0 +1,9 @@
+google-api-credentials.json
+node_modules/
+bower_components/
+build/
+
+*.log
+
+*.sublime-workplace
+*.sublime-project
