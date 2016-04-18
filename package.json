@@ -2,7 +2,7 @@
   "name": "google-drive-cms",
   "title": "google drive cms",
   "description": "",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "keywords": [],
   "devDependencies": {
     "autoprefixer": "^6.2.0",
