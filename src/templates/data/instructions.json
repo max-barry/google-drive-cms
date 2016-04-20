@@ -12,7 +12,7 @@
     }, {
         "title": "Add an endpoint to the settings",
         "deck": "<p>Open the sheet on the Spreadsheet called <em>Settings</em> and edit the <em>endpoint</em> value to the URL you want the Spreadsheet's content sent to.</p>",
-        "extra": "<br><a class=\"vam\" href=\"\"><i class=\"material-icons left\">mode_edit</i>Edit the endpoint of the template I just created</a><br><br><p class=\"warn-text\"><i class=\"material-icons vam\">info_outline</i>Note! You need to wire-up how your chosen endpoint handles the sent data. Google Drive CMS is unopinionated in this regard.</p>",
+        "extra": "<br><div style=\"\" class=\"update_endpoint\"><a class=\"vam\" data-show-endpoint-form href=\"#\"><i class=\"material-icons left\">mode_edit</i>Edit the endpoint of the template I just created</a></div><br><p class=\"warn-text\"><i class=\"material-icons vam\">info_outline</i>Note! You need to wire-up how your chosen endpoint handles the sent data. Google Drive CMS is unopinionated in this regard.</p>",
         "img": "http://placehold.it/500x300",
         "caption": "Edit the endpoint value in the Settings sheet"
     }

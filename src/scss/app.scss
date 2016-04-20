@@ -38,7 +38,7 @@ MATERIALIZE
 @import "components/materialbox";
 @import "components/forms/forms";
 // @import "components/table_of_contents";
-// @import "components/sideNav";
+@import "components/sideNav";
 @import "components/preloader";
 // @import "components/slider";
 // @import "components/carousel";
@@ -127,6 +127,18 @@ pre {
 header svg {
     height: 32px;
     vertical-align: middle;
+}
+
+
+.button-collapse {
+    margin-right: 15px;
+}
+
+@media #{$small-and-down} {
+    .side-nav li svg path { fill: black; }
+}
+header ul li:first-child {
+    font-weight: 500;
 }
 
 /**

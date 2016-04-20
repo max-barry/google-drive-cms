@@ -1,4 +1,9 @@
 {
+    "header": [
+        { "title": "Getting started", "url": "#getting-started", "blank": false },
+        { "title": "Documentation", "url": "", "blank": false },
+        { "title": "Examples", "url": "", "blank": false }
+    ],
     "footer": [
         { "title": "Documentation", "url": "" },
         { "title": "Project on Github", "url": "", "blank": true },

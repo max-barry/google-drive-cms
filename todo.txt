@@ -14,7 +14,7 @@ Instruction images
 Edit the endpoint of the template i just created (put it in an accordion)
 Documentation
 Logo for top left (drive icon > webpage)
-Amp up parralax
 
 WON'T DO
+Amp up parralax
 Fixed header?

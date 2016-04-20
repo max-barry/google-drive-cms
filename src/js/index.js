@@ -33,6 +33,7 @@ $(document).ready(function(){
 });
 
 // Typed effect in the explanation area
+
 var POSTExamples = [
     "directly in to a Firebase.io database.",
     "to a REST endpoint that saves the data to a local database.",
@@ -41,9 +42,21 @@ var POSTExamples = [
     "up to a CRM or ESP tool like MailChimp, Mail... Cimp?",
     "to Slack, Mandrill, or any trendy tool that accepts JSON POST or PUT calls",
 ];
-$("[data-type-target]").typed({
-    strings: POSTExamples,
-    typeSpeed: 0,
-    loop: true,
-    backDelay: 1000
-});
+
+var initiateTypedEffect = function(){
+    // Fix the max heights on these section to deal with sentence wrapping
+    var $toFix = $("[data-fix-max-height]");
+    $toFix.each(function(idx, el){
+        $(el).css("max-height", $(el).outerHeight());
+    });
+     
+    // Initiate typed library 
+    $("[data-type-target]").typed({
+        strings: POSTExamples,
+        typeSpeed: 0,
+        loop: true,
+        backDelay: 1000
+    });
+};
+
+initiateTypedEffect();

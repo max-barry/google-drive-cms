@@ -1,11 +1,17 @@
 <header>
     <nav>
         <div class="nav-wrapper">
-            {# <a href="/">Google Drive CMS</a> #}
-            <ul class="right">
-                <li><a href=""><strong>Getting started</strong></a></li>
-                <li><a href="">Documentation</a></li>
-                <li><a href="">Examples</a></li>
+            <a href="#" data-activates="mobile-navigation" class="button-collapse right"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                {% for headerLink in navigation.header %}
+                <li><a href="{{headerLink.url}}" {% if headerLink.blank %}target="_blank"{% endif %}>{{headerLink.title}}</a></li>
+                {% endfor %}
+                <li><a href="">{% include "../img/github.svg" %}</a></li>
+            </ul>
+            <ul class="side-nav" id="mobile-navigation">
+                {% for headerLink in navigation.header %}
+                <li><a href="{{headerLink.url}}" {% if headerLink.blank %}target="_blank"{% endif %}>{{headerLink.title}}</a></li>
+                {% endfor %}
                 <li><a href="">{% include "../img/github.svg" %}</a></li>
             </ul>
         </div>
