@@ -18,6 +18,7 @@ dist:
   description: "Production build"
   tasks:
     - "clean"
+    - "markdown"
     - "base"
     - "webpack:js"
     - "prettify"

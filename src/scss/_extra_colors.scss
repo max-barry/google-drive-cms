@@ -1,0 +1,41 @@
+/**
+Additional colour classes
+*/
+.primary {
+    background-color: $primary-color;
+}
+.primary-text {
+    color: $primary-color;
+}
+
+.primary-light {
+    background-color: $primary-color-light;
+}
+
+.accent {
+    background-color: $secondary-color;
+}
+.accent-text {
+    color: $secondary-color;
+}
+.success-text {
+    color: $success-color;
+}
+.success {
+    background-color: $success-color;
+    &.btn:hover, &.btn-large:hover {
+        background-color: lighten($success-color, 5%);
+
+    }
+}
+.warn-text {
+    color: $error-color;
+}
+.warn {
+    background-color: $error-color;
+    &.btn-large, &.btn {
+        &:hover, &:active, &:focus {
+            background-color: lighten($error-color, 5%);
+        }
+    }
+}

@@ -1,0 +1,32 @@
+{% extends "layouts/base.html" %}
+
+{% block content %}
+    <article class="header section-padding white-text primary-light">
+        <section class="container">
+            <div class="nav-dimensions">
+                <a href="/" class="breadcrumb">Google Drive CMS</a>
+                <a href="" class="breadcrumb">Documentation</a>
+            </div>
+            <h1 class="light">Documentation</h1>
+            <h2 class="flow-text"><strong>The Google Drive CMS</strong> is a content management system (CMS) built on an interface everyone understands.</h2>
+        </section>
+    </article>
+    <article class="row documentation">
+        <div class="container">
+            <section class="col m9 documentation__body">
+                {{readme.content|safe}}
+            </section>
+            <section class="col m3 documentation__contents">
+                <ul class="table-of-contents section">
+                    {% for header in readme.headers %}
+                        <li><a href="#{{header.id}}">{{header.title}}</a></li>
+                    {% endfor %}
+                </ul>
+            </section>
+        </div>
+    </article>
+{% endblock %}
+
+{% block extrajs %}
+<script src="/js/documentation.js"></script>
+{% endblock %}

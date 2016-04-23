@@ -1,6 +1,38 @@
 var grunt = require("grunt");
 
 module.exports = {
+    markdown: {
+        src: "./Readme.md",
+        dest: "<%= package.templates.data %>readme.json",
+        // dest: "./Readme.html",
+        options: {
+            template: "<%= package.paths.templates %>misc/readme.template.html",
+            postCompile: function(src, context) {
+                var json = {};
+
+                // Remove the first two lines of the readme
+                json.content = src.split("\n").slice(2).join("\n");
+
+                // Load Cheerio for DOM manipulation
+                var cheerio = require("cheerio"),
+                    $ = cheerio.load(src);
+
+                // For each header in the document, build a navigation tree
+                var headers = [];
+
+                $("h2").each(function(idx, header) {
+                    headers.push({
+                        id: $(header).attr("id"),
+                        title: $(header).text()
+                    });
+                });
+
+                json.headers = headers;
+
+                return JSON.stringify(json);
+            }
+        }
+    },
     swig: {
         options: {
             templatePath: "<%= package.paths.templates %>",

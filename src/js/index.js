@@ -1,6 +1,12 @@
-// Vendor
+/**
+Header area parralax initialisation
+*/
+$('.parallax').parallax();
+
+/**
+Generate fake data in the example table in instructions
+*/
 var faker = require('faker/locale/en_US');
-window.$.typed = require("typed.js");
 
 var fakeTable = function() {
     var tbody = $('.instruction__fake_table > tbody'),
@@ -22,17 +28,12 @@ var fakeTable = function() {
     code.append("[\n" + fJson.join(",\n") + "\n]");
 
 };
+fakeTable();
 
-$(document).ready(function(){
-    // Parallax effect in header
-    $('.parallax').parallax();
-    // Select inputs
-    $('select').material_select();
-    // Generate fake data in the example table in instructions
-    fakeTable();
-});
-
-// Typed effect in the explanation area
+/**
+Explanation typed text effects
+*/
+window.$.typed = require("typed.js");
 
 var POSTExamples = [
     "directly in to a Firebase.io database.",
@@ -60,3 +61,25 @@ var initiateTypedEffect = function(){
 };
 
 initiateTypedEffect();
+
+/**
+Add to Drive functionality
+*/
+var AddToDrive = require("./addToDrive.js");
+
+// When user clicks an "add to drive" button, add a copy of the base template to their Google Drive
+$("body").on("click", "[data-add-to-drive]", AddToDrive.main)
+        .on("submit", "[data-update-endpoint]", AddToDrive.updateEndpoint)
+        .on("click", "[data-show-endpoint-form]", AddToDrive.editEndpoint);
+
+/**
+Effects on scroll down of index page 
+*/
+var options = [{
+    selector: '.next_steps',
+    offset: 300,
+    callback: function() {
+        Materialize.showStaggeredList('#nextSteps');
+    }
+}, ];
+Materialize.scrollFire(options);

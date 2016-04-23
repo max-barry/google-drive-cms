@@ -1,0 +1,139 @@
+/**
+SECTIONS
+    1) Hero
+    2) Features
+    3) Getting Started
+    4) Next Steps
+*/
+// Hero
+.hero {
+    height: 75vh;
+    position: relative;
+    &:before {
+        content: "";
+        background-color: rgba(0, 0, 0, 0.15);
+        @include fill;
+    }
+}
+.hero__wrapper {
+    z-index: 1;
+}
+.hero__title {
+    font-weight: 600;
+}
+@media #{$small-and-down} {
+    .hero {
+        height: auto;
+        width: 100%;
+        padding: $master-padding 0;
+    }
+    .hero__subtitle br {
+        display: none;
+    }
+}
+
+// Features
+.feature {
+    margin-top: $master-padding*0.5;
+    // margin-bottom: $master-padding*0.5;
+}
+
+.feature__image {
+    $dim: 180px;
+    height: $dim;
+    width: $dim;
+    // background-color: $grey-light;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+    margin: 0 auto;
+    @for $i from 1 through 3 {
+        .feature:nth-child(#{$i}) & {
+            background-image: url("/img/google-drive-cms-#{$i}.svg");
+        }
+    }
+}
+
+@media #{$small-and-down} {
+    .feature { text-align: left; }
+    .feature__image {
+        $mobileDim: 32px;
+        float: left;
+        margin-right: 15px;
+        height: $mobileDim;
+        width: $mobileDim;
+        position: relative;
+        top: 0.5*$mobileDim;
+        background-color: transparent;
+        background-size: contain;
+    }
+    .feature h5 {
+        display: block;
+        margin-top: 15px;
+    }
+
+}
+
+// Gettings Started
+.getting_started {
+    counter-reset: getting_started;
+}
+.getting_started__step {
+    counter-increment: getting_started;
+    &:nth-child(2) {
+        background-color: #fafafa;
+    }
+    .warn-text i {
+        margin-right: 15px;
+    }
+    &.--final {
+        min-height: 25vh;
+        background-image: url("/img/howto__publish.gif");
+        background-repeat: no-repeat;
+        background-position: top right;
+        position: relative;
+        @media #{$small-and-down} {
+            background-position: top center;
+        }
+        &:before {
+            content: "";
+            background-image: linear-gradient(90deg, rgb(238, 238, 238) 40%, transparent 70%);
+            @include fill;
+        }
+        .container {
+            z-index: 1;
+        }
+        h3:before {
+            content: counter(getting_started) '.';
+            margin-right: 15px;
+            font-weight: 200;
+            @media #{$small-and-down} {
+                display: block;
+            }
+        }
+    }
+}
+.getting_started__step__number {
+    font-size: 2vw;
+    &:before {
+        content: counter(getting_started) '.';
+    }
+}
+
+// Next steps
+.next_steps {
+    .divider {
+        margin-top: 0.5*$master-padding;
+        margin-bottom: 0.5*$master-padding;
+    }
+    ul li { opacity: 0; }
+}
+@media #{$medium-and-up} {
+    .next_steps__wrapper.valign {
+        display: flex;
+    }
+    .next_steps__wrapper, .next_steps {
+        align-items: flex-end;
+    }
+}
+

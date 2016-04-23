@@ -1,0 +1,58 @@
+/**
+Type classes
+*/
+.--thick { font-weight: 700; }
+.--thin { font-weight: 200; }
+
+/**
+Micro classes
+*/
+
+
+.vam {
+    vertical-align: middle;
+}
+
+.--no-margin {
+    margin: 0;
+}
+
+/**
+Miscellaneous
+*/
+.section-padding {
+    padding: $master-padding 0;
+    @media #{$small-and-down} {
+        padding: $master-padding*0.5 0;
+    }
+}
+
+.nav-dimensions {
+    height: $navbar-height-mobile;
+    line-height: $navbar-height-mobile;
+}
+
+.--hover-underline:hover {
+    border-bottom: 1px solid;
+}
+
+pre {
+    padding: 20px;
+    background-color: #f5f2f0;
+}
+
+header svg {
+    height: 32px;
+    vertical-align: middle;
+}
+
+.button-collapse {
+    margin-right: 15px;
+}
+
+@media #{$small-and-down} {
+    .side-nav li svg path { fill: black; }
+}
+header ul li:first-child {
+    font-weight: 500;
+}

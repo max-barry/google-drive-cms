@@ -1,7 +1,7 @@
 // Colors
 $primary-color: color("teal", "base");
-$primary-color-light: lighten($primary-color, 15%);
-$primary-color-dark: darken($primary-color, 15%);
+$primary-color-light: color("teal", "lighten-2");
+$primary-color-dark: color("teal", "darken-2");
 
 $secondary-color: color("amber", "accent-3");
 $success-color: color("green", "base");

@@ -20,9 +20,7 @@ module.exports = {
         entry: {
             app: "<%= package.src.js %>app.js",
             index: "<%= package.src.js %>index.js",
-            // Each additional bundle you require (e.g. index page js, or contact page js)
-            // should be added here and referenced as a script tag in the corresponding template
-            // index: "<%= package.src.js %>index.js",
+            documentation: "<%= package.src.js %>documentation.js",
         },
         output: {
             path: "<%= package.build.js %>",
