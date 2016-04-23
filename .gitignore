@@ -5,5 +5,5 @@ build/
 
 *.log
 
-*.sublime-workplace
+*.sublime-workspace
 *.sublime-project
