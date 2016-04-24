@@ -2,6 +2,7 @@ google-api-credentials.json
 node_modules/
 bower_components/
 build/
+www/
 
 *.log
 

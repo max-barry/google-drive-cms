@@ -60,16 +60,16 @@
   "paths": {
     "project": "./src/",
     "templates": "./src/templates/",
-    "build": "./build/",
+    "build": "./www/",
     "tmp": "./tmp/",
     "bower": "./bower_components/",
     "node": "./node_modules/"
   },
   "build": {
-    "js": "./build/js/",
-    "fonts": "./build/fonts/",
-    "images": "./build/img/",
-    "css": "./build/css/"
+    "js": "./www/js/",
+    "fonts": "./www/fonts/",
+    "images": "./www/img/",
+    "css": "./www/css/"
   },
   "src": {
     "js": "./src/js/",
