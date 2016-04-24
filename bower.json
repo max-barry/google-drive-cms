@@ -5,6 +5,6 @@
   "dependencies": {
     "bourbon": "^4.0.1",
     "Scut": "scut#^1.2.1",
-    "Materialize": "materialize#^0.97.6"
+    "Materialize": "materialize#0.97.3"
   }
 }

@@ -8,6 +8,7 @@ VENDOR
 MATERIALIZE
 */
 // Mixins
+@import "components/prefixer"; // Remove when you bump versions
 @import "components/mixins";
 @import "components/color";
 
@@ -36,7 +37,8 @@ MATERIALIZE
 @import "components/collapsible";
 // @import "components/chips";
 @import "components/materialbox";
-@import "components/forms/forms";
+@import "components/form";
+// @import "components/forms/forms"; Readd when you can upgrade version
 @import "components/table_of_contents";
 @import "components/sideNav";
 @import "components/preloader";
@@ -66,10 +68,10 @@ html {
 }
 
 ::selection {
-  background: lighten($secondary-color, 25%); /* WebKit/Blink Browsers */
+  background: lighten($secondary-color, 25%);
 }
 ::-moz-selection {
-  background: lighten($secondary-color, 25%); /* Gecko Browsers */
+  background: lighten($secondary-color, 25%);
 }
 
 /**
