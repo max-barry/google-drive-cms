@@ -47,7 +47,9 @@ The core template has four sheets. Each sheet can be accessed from Google Drive'
 The main sheet where an admin inputs their data.
 
 #### Headers
-The top row of the *CMS* sheet represents the CMS' headers. These are used as the keys against which your data is mapped in the JSON object sent to your endpoint. Headers behave similar to column names in a standard database. 
+The top row of the *CMS* sheet represents the CMS' headers. These are used as the keys against which your data is mapped in the JSON object sent to your endpoint. Headers behave similar to column names in a standard database.
+
+![Example of headers for a blog's CMS](http://drivecms.xyz/img/documentation/headers.png "Example of headers for a blog's CMS")
 
 #### Field types
 Field types let admins add special functionality to a column. There are three field types:
