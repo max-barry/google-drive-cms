@@ -1,22 +1,18 @@
 {% extends "layouts/base.html" %}
 
+{% block meta_title %} | Documentation{% endblock meta_title %}
+{% block meta_description %}Google Drive content management system (CMS) documentation. Adjust settings within the CMS and learn how to extend it to help create content for your website straight from Google Drive{% endblock meta_description %}
+
+
 {% block content %}
-    <article class="header section-padding white-text primary-light">
-        <section class="container">
-            <div class="nav-dimensions">
-                <a href="/" class="breadcrumb">Google Drive CMS</a>
-                <a href="" class="breadcrumb">Documentation</a>
-            </div>
-            <h1 class="light">Documentation</h1>
-            <h2 class="flow-text"><strong>The Google Drive CMS</strong> is a content management system (CMS) built on an interface everyone understands.</h2>
-        </section>
-    </article>
-    <article class="row documentation">
+    {% set hero_details = { title: "Documentation", breadcrumbUrl: "/documentation", deck: "The <strong>Google Drive CMS</strong> is a content management system (CMS) built on an interface everyone understands."} %}
+    {% include "includes/components/_standard_hero.html" %}
+    <article class="row documentation section-padding">
         <div class="container">
-            <section class="col m9 documentation__body">
+            <section class="col s12 m9 documentation__body">
                 {{readme.content|safe}}
             </section>
-            <section class="col m3 documentation__contents">
+            <section class="col hide-on-small-only m3 documentation__contents">
                 <ul class="table-of-contents section">
                     {% for header in readme.headers %}
                         <li><a href="#{{header.id}}">{{header.title}}</a></li>

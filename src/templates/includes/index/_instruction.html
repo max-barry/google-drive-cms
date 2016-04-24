@@ -2,7 +2,7 @@
     <div class="container">
         <div class="col l1 thin primary-text getting_started__step__number hide-on-med-and-down"></div>
         {% if instruction.img %}
-            <div class="col m5"><img class="responsive-img materialboxed" src="{{instruction.img}}" data-caption="{{instruction.caption}}" alt="Add the Google Drive CMS template to your Google Drive"></div>
+            <div class="col m5"><img class="responsive-img materialboxed" data-normal="{{instruction.img}}" data-caption="{{instruction.caption}}" alt="Add the Google Drive CMS template to your Google Drive"></div>
         {% endif %}
         <div class="col {% if instruction.img %}m6{% else %}m11 l9{% endif %}">
             <h5>{{instruction.title}}</h5>

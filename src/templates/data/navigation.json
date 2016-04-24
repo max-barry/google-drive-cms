@@ -1,12 +1,12 @@
 {
     "header": [
-        { "title": "Getting started", "url": "#getting-started", "blank": false },
-        { "title": "Documentation", "url": "", "blank": false },
-        { "title": "Examples", "url": "", "blank": false }
+        { "title": "Getting started", "url": "/#getting-started", "blank": false },
+        { "title": "Documentation", "url": "/documentation", "blank": false },
+        { "title": "Examples", "url": "/examples", "blank": false }
     ],
     "footer": [
-        { "title": "Documentation", "url": "" },
-        { "title": "Project on Github", "url": "", "blank": true },
+        { "title": "Documentation", "url": "/documentation" },
+        { "title": "Project on Github", "url": "https://github.com/max-barry/google-drive-cms", "blank": true },
         { "title": "More by mxbry.com", "url": "https://mxbry.com", "blank": true }
     ]
 }

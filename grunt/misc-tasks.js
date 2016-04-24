@@ -22,5 +22,13 @@ module.exports = {
             open: true,
             base: "<%= package.paths.build %>"
         }
-    }
+    },
+    copy: {
+        files: [{
+            expand: true,
+            cwd: "<%= package.paths.project %>favicons/",
+            src: ["**/*"],
+            dest: "<%= package.paths.build %>"
+        }]
+    },
 };

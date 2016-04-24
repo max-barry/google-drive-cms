@@ -1,10 +1,22 @@
 .documentation__body {
+    hr {
+        margin: 65px auto;
+        width: 300px;
+    }
+    code {
+        padding: 2px;
+        background-color: whitesmoke;
+    }
+    h2 {
+        font-size: 3rem;
+        font-weight: 500;
+    }
     h3 {
         font-size: 2rem;
     }
     h4, h5 {
         font-size: 1rem;
-        margin-top: 2.5rem;
+        // margin-top: 2.5rem;
         font-weight: 500;
         color: $primary-color;
     }
@@ -29,5 +41,14 @@
             margin-right: 1em;
             color: $secondary-color;
         }
+    }
+}
+@media #{$small-and-down} {
+    .documentation__body h2, .documentation_hero__title {
+        font-size: 10vw;
+    }
+    .documentation__body hr {
+        width: 100%;
+        margin: 35px auto;
     }
 }

@@ -6,13 +6,14 @@
                 {% for headerLink in navigation.header %}
                 <li><a href="{{headerLink.url}}" {% if headerLink.blank %}target="_blank"{% endif %}>{{headerLink.title}}</a></li>
                 {% endfor %}
-                <li><a href="">{% include "../img/github.svg" %}</a></li>
+                <li><a href="https://github.com/max-barry/google-drive-cms">{% include "../img/github.svg" %}</a></li>
             </ul>
             <ul class="side-nav" id="mobile-navigation">
+                <li><a href="/">The Google Drive CMS</a></li>
                 {% for headerLink in navigation.header %}
                 <li><a href="{{headerLink.url}}" {% if headerLink.blank %}target="_blank"{% endif %}>{{headerLink.title}}</a></li>
                 {% endfor %}
-                <li><a href="">{% include "../img/github.svg" %}</a></li>
+                <li><a href="https://github.com/max-barry/google-drive-cms">{% include "../img/github.svg" %}</a></li>
             </ul>
         </div>
     </nav>

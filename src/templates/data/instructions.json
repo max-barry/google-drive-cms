@@ -3,7 +3,7 @@
         "title": "Copy the Google Drive CMS template to your Google Drive",
         "deck": "<p>This template provides the Apps Scripts and basic structure to publish content to your URL endpoint.</p><p>Either <em>Add to Drive</em> (button below!) from this site, or make a copy of a pre-existing Google Drive CMS template in your Drive.</p>",
         "extra": "<br><div class=\"add_to_drive\"><button data-add-to-drive class=\"btn\">Add to Drive</button></div>",
-        "img": "http://placehold.it/500x300",
+        "img": "/img/getting-started/copy-template-to-drive.png",
         "caption": "Add the Google Drive CMS template to your Google Drive"
     }, {
         "title": "Create headers for your content",
@@ -11,9 +11,9 @@
         "extra": "<br><a href=\"\">See example Spreadsheet</a>"
     }, {
         "title": "Add an endpoint to the settings",
-        "deck": "<p>Open the sheet on the Spreadsheet called <em>Settings</em> and edit the <em>endpoint</em> value to the URL you want the Spreadsheet's content sent to.</p>",
+        "deck": "<p>Open the sheet on the Spreadsheet called <em>SETTINGS</em> and edit the <em>endpoint</em> value to the URL you want the Spreadsheet's content sent to.</p>",
         "extra": "<br><div style=\"display: none;\" class=\"update_endpoint\"><a class=\"vam\" data-show-endpoint-form href=\"#\"><i class=\"material-icons left\">mode_edit</i>Edit the endpoint of the template I just created</a></div><br><p class=\"warn-text\"><i class=\"material-icons vam\">info_outline</i>Note! You need to wire-up how your chosen endpoint handles the sent data. Google Drive CMS is unopinionated in this regard.</p>",
-        "img": "http://placehold.it/500x300",
-        "caption": "Edit the endpoint value in the Settings sheet"
+        "img": "/img/getting-started/customise-endpoint.png",
+        "caption": "Edit the endpoint value in the SETTINGS sheet"
     }
 ] 

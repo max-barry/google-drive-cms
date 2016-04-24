@@ -1,0 +1,31 @@
+{% extends "layouts/base.html" %}
+
+{% block meta_title %} | Examples{% endblock meta_title %}
+{% block meta_description %}Google Drive content management system (CMS) examples. Examples and practical case studies that teach you how to use Google Drive to create content for your website{% endblock meta_description %}
+
+{% block content %}
+    {% set hero_details = { title: "Examples", breadcrumbUrl: "/examples", deck: "Practical implementations of the <strong>Google Drive CMS</strong> workflow."} %}
+    {% include "includes/components/_standard_hero.html" %}
+    <article class="row examples section-padding">
+        <div class="container">
+            <div class="col l4 m6 s12">
+                <section class="card white">
+                    <div class="card-image">
+                        <img class="activator" src="/img/examples/firebase.png" alt="">
+                        <span class="card-title">Google Drive CMS &amp; Firebase</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Using Firebase to create an instance of the Google Drive CMS without the need to write server side code to handle the JSON payload.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="">Integrating with Firebase</a>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </article>
+{% endblock %}
+
+{% block extrajs %}
+{# <script src="/js/documentation.js"></script> #}
+{% endblock %}

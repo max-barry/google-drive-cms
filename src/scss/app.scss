@@ -25,7 +25,7 @@ MATERIALIZE
 @import "components/navbar";
 @import "components/roboto";
 @import "components/typography";
-// @import "components/cards";
+@import "components/cards";
 @import "components/toast";
 // @import "components/tabs";
 // @import "components/tooltip";
@@ -62,6 +62,14 @@ html {
 
 *, *:before, *:after {
     box-sizing: inherit;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+::selection {
+  background: lighten($secondary-color, 25%); /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: lighten($secondary-color, 25%); /* Gecko Browsers */
 }
 
 /**

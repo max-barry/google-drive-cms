@@ -3,12 +3,12 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{{meta.title}}</title>
-    <meta name="description" content="{{meta.description}}">
-    <meta name="keywords" content="{{meta.keywords}}">
+    <title>{{meta.title}}{% block meta_title %}{% endblock meta_title %}</title>
+    <meta name="description" content="{% block meta_title %}{{meta.description}}{% endblock meta_title %}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     {% include "./includes/socialmeta.html" %}
+    {% include "./includes/favicon.html" %}
 
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="/css/app.css">
@@ -19,12 +19,22 @@
 </head>
 
 <body>
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-W95L8X"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W95L8X');</script>
+<!-- End Google Tag Manager -->
 
 {% include "./includes/header.html" %}
 
 {% block content %}{% endblock %}
 
 {% include "./includes/footer.html" %}
+<script src="https://apis.google.com/js/client.js"></script>
 <script src="/js/app.js"></script>
 {% block extrajs %}{% endblock %}
 

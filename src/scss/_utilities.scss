@@ -50,9 +50,12 @@ header svg {
     margin-right: 15px;
 }
 
-@media #{$small-and-down} {
+@media #{$medium-and-down} {
     .side-nav li svg path { fill: black; }
 }
-header ul li:first-child {
-    font-weight: 500;
-}
+
+// @media #{$large-and-up} {
+    header ul li:first-child {
+        font-weight: 500;
+    }
+// }

@@ -25,6 +25,7 @@ dist:
     - "cmq"
     - "postcss"
     - "copy:fonts"
+    - "copy:misc"
     - "imagemin"
     - "webp"
 
