@@ -27,7 +27,6 @@ dist:
     - "copy:fonts"
     - "copy:misc"
     - "imagemin"
-    - "webp"
 
 deploy:
   description: "Deploy the build to a Surge.sh server"

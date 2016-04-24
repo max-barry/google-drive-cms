@@ -4,7 +4,7 @@ module.exports = {
             includePaths: [
                 '<%= package.paths.bower %>bourbon/app/assets/stylesheets/',
                 '<%= package.paths.bower %>Materialize/sass/',
-                '<%= package.paths.bower %>Scut/dist/'
+                '<%= package.paths.bower %>scut/dist/'
             ]
         },
         files: [{
