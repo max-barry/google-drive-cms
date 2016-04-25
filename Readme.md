@@ -26,7 +26,7 @@ To begin using the Google Drive CMS you need a copy of the core template. This c
 To get a copy of the core template there are 3 options:
 
 1. Add it to you Google Drive direct from [drivecms.xyz](https://drivecms.xyz)
-2. Make a copy of the core template yourself [using this link]()
+2. Make a copy of the core template yourself [using this link](https://docs.google.com/spreadsheets/d/15ifxjEo9nVXTbeX7mwLnW-F5yu96u9IF1RL3wHoYLbs/edit?usp=sharing)
 3. Copy an existing Google Drive CMS template in your Google Drive
 
 After creating a copy of the core template, change the *endpoint* value within the *SETTINGS* sheet. For more information on configuring you Google Drive CMS template, see the [settings](#settings) section of this documentation.
