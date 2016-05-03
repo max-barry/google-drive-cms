@@ -64,8 +64,16 @@ http {
 
     location / {
       expires off;
-      try_files $uri $uri/ <%= ENV["REDIRECT_NOT_FOUND_TO"] || '' %> =404;
+      try_files $uri $uri/ <%= ENV["REDIRECT_NOT_FOUND_TO"] || '' %> @htmlext;
       <% if ENV["NGINX_DEBUG"] %>add_header Nginx-Base-Location on;<% end %>
+    }
+
+    location ~ \.html$ {
+      try_files $uri =404;
+    }   
+
+    location @htmlext {
+        rewrite ^(.*)$ $1.html last;
     }
 
     location ~ /\. {

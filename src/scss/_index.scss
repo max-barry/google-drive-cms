@@ -33,46 +33,46 @@ SECTIONS
 }
 
 // Features
-.feature {
-    margin-top: $master-padding*0.5;
-    // margin-bottom: $master-padding*0.5;
-}
+// .feature {
+//     margin-top: $master-padding*0.5;
+//     // margin-bottom: $master-padding*0.5;
+// }
 
-.feature__image {
-    $dim: 180px;
-    height: $dim;
-    width: $dim;
-    // background-color: $grey-light;
-    background-repeat: no-repeat;
-    background-size: 50%;
-    background-position: center;
-    margin: 0 auto;
-    @for $i from 1 through 3 {
-        .feature:nth-child(#{$i}) & {
-            background-image: url("/img/google-drive-cms-#{$i}.svg");
-        }
-    }
-}
+// .feature__image {
+//     $dim: 180px;
+//     height: $dim;
+//     width: $dim;
+//     // background-color: $grey-light;
+//     background-repeat: no-repeat;
+//     background-size: 50%;
+//     background-position: center;
+//     margin: 0 auto;
+//     @for $i from 1 through 3 {
+//         .feature:nth-child(#{$i}) & {
+//             background-image: url("/img/google-drive-cms-#{$i}.svg");
+//         }
+//     }
+// }
 
-@media #{$small-and-down} {
-    .feature { text-align: left; }
-    .feature__image {
-        $mobileDim: 32px;
-        float: left;
-        margin-right: 15px;
-        height: $mobileDim;
-        width: $mobileDim;
-        position: relative;
-        top: 0.5*$mobileDim;
-        background-color: transparent;
-        background-size: contain;
-    }
-    .feature h5 {
-        display: block;
-        margin-top: 15px;
-    }
+// @media #{$small-and-down} {
+//     .feature { text-align: left; }
+//     .feature__image {
+//         $mobileDim: 32px;
+//         float: left;
+//         margin-right: 15px;
+//         height: $mobileDim;
+//         width: $mobileDim;
+//         position: relative;
+//         top: 0.5*$mobileDim;
+//         background-color: transparent;
+//         background-size: contain;
+//     }
+//     .feature h5 {
+//         display: block;
+//         margin-top: 15px;
+//     }
 
-}
+// }
 
 // Gettings Started
 .getting_started {
@@ -81,7 +81,7 @@ SECTIONS
 .getting_started__step {
     counter-increment: getting_started;
     &:nth-child(2) {
-        background-color: #fafafa;
+        background-color: $grey-soft;
     }
     .warn-text i {
         margin-right: 15px;
@@ -97,7 +97,7 @@ SECTIONS
         }
         &:before {
             content: "";
-            background-image: linear-gradient(90deg, rgb(238, 238, 238) 40%, transparent 70%);
+            background-image: linear-gradient(90deg, $grey-soft 40%, transparent 70%);
             @include fill;
         }
         .container {
