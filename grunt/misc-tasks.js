@@ -31,4 +31,11 @@ module.exports = {
             dest: "<%= package.paths.build %>"
         }]
     },
+    sitemap: {
+        pattern: ["html/**/*.html"],
+        siteRoot: "html/",
+        "changefreq": "monthly",
+        "priority": 0.8,
+        extension: { required: false }
+    }
 };

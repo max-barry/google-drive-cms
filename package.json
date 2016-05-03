@@ -1,9 +1,9 @@
 {
   "name": "google-drive-cms",
-  "title": "google drive cms",
-  "description": "",
+  "title": "Google Drive CMS",
+  "description": "Create and manage content for your website straight from Google Drive. Enjoy the security, ease-of-use and familiarity that Google Drive brings as a content management system.",
   "version": "0.0.12",
-  "keywords": [],
+  "keywords": ["cms", "google drive", "api", "saas"],
   "scripts": {
     "postinstall": "bower install && grunt dist"
   },
@@ -31,6 +31,7 @@
     "grunt-postcss": "^0.7.1",
     "grunt-prettify": "^0.4.0",
     "grunt-sass": "^1.1.0",
+    "grunt-sitemap": "^1.2.1",
     "grunt-surge": "^0.6.2",
     "grunt-swig-templates": "^0.1.4",
     "grunt-webp": "^0.0.4",
@@ -50,13 +51,15 @@
     "webpack-dev-server": "^1.14.0"
   },
   "author": {
-    "name": ""
+    "name": "Max Barry",
+    "email": "max@mxbry.com"
   },
   "main": "Gruntfile.js",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/max-barry/google-drive-cms"
   },
+  "homepage": "https://drivecms.xyz/",
   "license": "MIT",
   "readmeFilename": "Readme.md",
   "paths": {

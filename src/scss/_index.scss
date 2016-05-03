@@ -80,7 +80,7 @@ SECTIONS
 }
 .getting_started__step {
     counter-increment: getting_started;
-    &:nth-child(2) {
+    &:nth-child(odd) {
         background-color: $grey-soft;
     }
     .warn-text i {
@@ -97,7 +97,7 @@ SECTIONS
         }
         &:before {
             content: "";
-            background-image: linear-gradient(90deg, $grey-soft 40%, transparent 70%);
+            background-image: linear-gradient(90deg, darken($grey-soft, 5) 40%, transparent 70%);
             @include fill;
         }
         .container {
