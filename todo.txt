@@ -2,18 +2,20 @@ DONE
 Wire up newsletter to mailchimp
 Documentation
 Edit the endpoint of the template i just created (put it in an accordion)
+Sitemap created
+Wire up the navigation header links
+Instruction images
 
 KINDA DONE
 Mobile / tablet mode
-Wire up the navigation header links
 
 TODO
 Check all hrefs
 Add "medium article" link to next steps
 Write firebase example
-Instruction images
-Meta
-Google Analytics
+Social meta imagery
+Submit sitemap to webmaster
+
 
 WON'T DO
 Logo for top left (drive icon > webpage)
