@@ -8,6 +8,8 @@ pages:
 
   script:
     - npm install
+    - bower install
+    - grunt dist
   artifacts:
     paths:
     - public
