@@ -7,10 +7,13 @@ module.exports = {
     },
     cacheBust: {
         options: {
-            deleteOriginals: true
+            assets: ["html/css/**", "html/js/**" ],
+            // deleteOriginals: true
         },
-        files: [{
-            src: ["<%= package.paths.build %>**/*.html"]
+        files: [{   
+            expand: true,
+            cwd: "<%= package.paths.build %>",
+            src: ["**/*.html"]
         }]
     }
 };

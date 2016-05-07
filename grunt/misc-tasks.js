@@ -32,8 +32,8 @@ module.exports = {
         }]
     },
     sitemap: {
-        pattern: ["public/**/*.html"],
-        siteRoot: "public/",
+        pattern: ["html/**/*.html"],
+        siteRoot: "html/",
         "changefreq": "monthly",
         "priority": 0.8,
         extension: { required: false }

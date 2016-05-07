@@ -28,12 +28,12 @@ dist:
     - "copy:fonts"
     - "copy:misc"
     - "imagemin"
+    # - "cacheBust"
 
 deploy:
   description: "Deploy the build to a Surge.sh server"
   tasks:
     - "dist"
-    - "cacheBust"
     - "surge"
 
 run:
