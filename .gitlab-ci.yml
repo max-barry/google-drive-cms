@@ -1,0 +1,13 @@
+image: node:4.4.4
+
+pages:
+  cache:
+    paths:
+    - node_modules/
+    - bower_components/
+
+  script:
+    - npm install
+  artifacts:
+    paths:
+    - public

@@ -65,16 +65,16 @@
   "paths": {
     "project": "./src/",
     "templates": "./src/templates/",
-    "build": "./html/",
+    "build": "./public/",
     "tmp": "./tmp/",
     "bower": "./bower_components/",
     "node": "./node_modules/"
   },
   "build": {
-    "js": "./html/js/",
-    "fonts": "./html/font/",
-    "images": "./html/img/",
-    "css": "./html/css/"
+    "js": "./public/js/",
+    "fonts": "./public/font/",
+    "images": "./public/img/",
+    "css": "./public/css/"
   },
   "src": {
     "js": "./src/js/",
