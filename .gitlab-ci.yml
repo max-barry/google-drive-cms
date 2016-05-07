@@ -7,6 +7,7 @@ pages:
     - bower_components/
 
   script:
+    - npm install -g bower
     - npm install
     - bower install
     - grunt dist
