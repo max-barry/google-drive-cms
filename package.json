@@ -4,6 +4,9 @@
   "description": "Create and manage content for your website straight from Google Drive. Enjoy the security, ease-of-use and familiarity that Google Drive brings as a content management system.",
   "version": "0.0.20",
   "keywords": ["cms", "google drive", "api", "saas"],
+  "scripts": {
+    "postinstall": "bower install && grunt dist"
+  },
   "dependencies": {
     "autoprefixer": "^6.2.0",
     "bower": "^1.7.9",
