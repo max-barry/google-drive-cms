@@ -7,9 +7,8 @@ pages:
     - bower_components/
 
   script:
-    - npm install -g bower
-    - npm install
-    - bower install
+    - npm install --silent
+    - ./node_modules/bower/bin/bower -s install
     - grunt dist
   artifacts:
     paths:
