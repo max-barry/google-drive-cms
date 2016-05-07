@@ -9,7 +9,7 @@ pages:
   script:
     - npm uninstall grunt-contrib-imagemin
     - npm install grunt-contrib-imagemin
-    - npm install --silent
+    - npm install
     - ./node_modules/bower/bin/bower -s install --allow-root
     - ./node_modules/grunt-cli/bin/grunt dist --force
   artifacts:
