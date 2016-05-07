@@ -8,7 +8,7 @@ pages:
 
   script:
     - npm install --silent
-    - ./node_modules/bower/bin/bower -s install
+    - ./node_modules/bower/bin/bower -s install --allow-root
     - grunt dist
   artifacts:
     paths:
