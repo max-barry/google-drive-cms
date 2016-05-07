@@ -69,7 +69,7 @@
   },
   "build": {
     "js": "./public/js/",
-    "fonts": "./public/font/",
+    "fonts": "./public/fonts/",
     "images": "./public/img/",
     "css": "./public/css/"
   },
