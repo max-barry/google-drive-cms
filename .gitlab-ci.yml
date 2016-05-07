@@ -6,10 +6,14 @@ pages:
     - node_modules/
     - bower_components/
 
+  only:
+    - deploy
+
   script:
     - npm install --unsafe-perm
     - ./node_modules/bower/bin/bower -s install --allow-root
     - ./node_modules/grunt-cli/bin/grunt dist
+
   artifacts:
     paths:
     - public
