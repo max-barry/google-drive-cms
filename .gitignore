@@ -3,6 +3,7 @@ node_modules/
 bower_components/
 build/
 html/
+public/
 
 *.log
 
