@@ -28,6 +28,7 @@ dist:
     - "copy:fonts"
     - "copy:misc"
     - "imagemin"
+    - "modernizr"
     # - "cacheBust"
 
 deploy:
