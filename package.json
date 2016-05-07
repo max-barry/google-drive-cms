@@ -2,7 +2,7 @@
   "name": "google-drive-cms",
   "title": "Google Drive CMS",
   "description": "Create and manage content for your website straight from Google Drive. Enjoy the security, ease-of-use and familiarity that Google Drive brings as a content management system.",
-  "version": "0.0.17",
+  "version": "0.0.18",
   "keywords": ["cms", "google drive", "api", "saas"],
   "dependencies": {
     "autoprefixer": "^6.2.0",
