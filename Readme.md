@@ -41,13 +41,13 @@ The Google Drive CMS will add a custom menu option to the top of the Google Shee
 ---
 
 ## Understanding the spreadsheet
-The core template has four sheets. Each sheet can be accessed from Google Drive's sheet navigation toolbar at the bottom of the page.
+The core template has four tabs. Each tab can be accessed from Google Drive's tab navigation toolbar at the bottom of the page.
 
 ### CMS
-The main sheet where an admin inputs their data.
+The main tab where an admin inputs their data.
 
 #### Headers
-The top row of the *CMS* sheet represents the content's headers. These are used as the keys to map the content's data against in the JSON object sent to your endpoint. Headers behave similar to column names in a standard database.
+The top row of the *CMS* tab represents the content's headers. These are used as the keys to map the content's data against in the JSON object sent to your endpoint. Headers behave similar to column names in a standard database.
 
 ![Example of headers for a blog's CMS](http://drivecms.xyz/img/documentation/headers.png "Example of headers for a blog's CMS")
 
@@ -67,8 +67,8 @@ Each row beneath the field types will become an object within the JSON array sen
 
 For example, an individual blog post is a content row, and it might have headers like "title" or "publication date".
 
-### SETTINGS
-The *SETTINGS* sheet within the Google Drive CMS template allows customization the CMS' behavior.
+### Settings
+The *SETTINGS* tab within the Google Drive CMS template allows customization the CMS' behavior.
 
 The following settings can be configured:
 
@@ -82,7 +82,7 @@ The following settings can be configured:
 
 
 ### _internals
-It might be best to just leave this alone. Values in this sheet power current and future functionality at a low level. 
+It might be best to just leave this alone. Values in this tab power current and future functionality at a low level. 
 
 ---
 

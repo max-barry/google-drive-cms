@@ -74,6 +74,10 @@ html {
   background: lighten($secondary-color, 25%);
 }
 
+.dropdown-content li span {
+    color: $primary-color;
+}
+
 /**
 Site Components
 */
