@@ -10,14 +10,8 @@ KINDA DONE
 Mobile / tablet mode
 
 TODO
-Check all hrefs
-Add "medium article" link to next steps
-Write firebase example
 Social meta imagery
-Submit sitemap to webmaster
-
 
 WON'T DO
 Logo for top left (drive icon > webpage)
-Amp up parralax
 Fixed header?
