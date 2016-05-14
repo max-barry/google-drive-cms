@@ -77,9 +77,9 @@ SECTIONS
 // Gettings Started
 .getting_started {
     counter-reset: getting_started;
-    padding: 110px 0;
 }
 .getting_started__step {
+    padding: 110px 0;
     counter-increment: getting_started;
     &:nth-child(odd) {
         background-color: $grey-soft;
