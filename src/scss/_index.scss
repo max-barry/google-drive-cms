@@ -77,6 +77,7 @@ SECTIONS
 // Gettings Started
 .getting_started {
     counter-reset: getting_started;
+    padding: 110px 0;
 }
 .getting_started__step {
     counter-increment: getting_started;
