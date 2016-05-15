@@ -8,7 +8,7 @@
     }, {
         "title": "Create headers for your content",
         "deck": "<p>On the CMS sheet of your new Google Drive CMS template add headers, which will be used as the keys in the JSON object sent to your API.<br>Think of these headers like field names in a database.</p><span class=\"hide-on-small-only\"><p>For example, a Spreadsheet that looks like this:</p><table class=\"instruction__fake_table\"><thead><tr><th>Name</th><th>Email</th></tr></thead><tbody></tbody></table><br>Will send JSON to your endpoint that looks like this:<pre class=\"instruction__fake_json\"><code></code></pre></span>",
-        "extra": "<br><a href=\"\">See example Spreadsheet</a>"
+        "extra": "<br><a href=\"https://docs.google.com/spreadsheets/d/12BJi_Ln7z5Q5KIuJcPNwPRKwUQg3G7B7NNO7APFWUQk/edit#gid=0\">See example Spreadsheet</a>"
     }, {
         "title": "Add an API to the settings",
         "deck": "<p>Open the sheet on the Spreadsheet called <em>SETTINGS</em> and edit the endpoint value to the API you want the Spreadsheet's content sent to.</p>",
