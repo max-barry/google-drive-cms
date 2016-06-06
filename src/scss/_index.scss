@@ -7,7 +7,8 @@ SECTIONS
 */
 // Hero
 .hero {
-    height: 60vh;
+    // height: 60vh;
+    background-color: $primary-color;
     position: relative;
     &:before {
         content: "";
@@ -20,6 +21,7 @@ SECTIONS
 }
 .hero__title {
     font-weight: 600;
+    margin-top: 0;
 }
 @media #{$small-and-down} {
     .hero {
@@ -140,4 +142,3 @@ SECTIONS
         align-items: flex-end;
     }
 }
-
