@@ -1,0 +1,27 @@
+{
+    "hosting": {
+        "public": "html",
+        "redirects": [{
+            "source": "/documentation",
+            "destination": "/documentation.html",
+            "type": 301
+        }, {
+            "source": "/examples",
+            "destination": "/examples.html",
+            "type": 301
+        }],
+        "headers": [{
+            "source": "**/*.@(eot|otf|ttf|ttc|woff|font.css)",
+            "headers": [{
+                "key": "Access-Control-Allow-Origin",
+                "value": "*"
+            }]
+        }, {
+            "source": "**/*.@(jpg|jpeg|gif|png|svg|eot|otf|ttf|ttc|woff|woff2|css|js)",
+            "headers": [{
+                "key": "Cache-Control",
+                "value": "max-age=2592000"
+            }]
+        }]
+    }
+}

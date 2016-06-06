@@ -10,7 +10,7 @@ The only **requirements** to run the Google Drive CMS are:
 - A duplicate copy of the Google Drive CMS template
 - An API endpoint to handle the data sent from the spreadsheet
 
-It is possible to run the CMS without writing server side code at the chosen API endpoint. The CMS' content can be exported as a JSON file, or it can be added directly to any PAAS databases that expose an API. An example of using [Firebase](https://www.firebase.com/) to create the latter of these flows can be found on our [examples page](/examples).
+It is possible to run the CMS without writing server side code at the chosen API endpoint. The CMS' content can be exported as a JSON file, or it can be added directly to any PAAS databases that expose an API. An example of using [Firebase](https://www.firebase.com/) to create the latter of these flows can be found on our [examples page](/examples.html).
 
 ### Practical examples
 The following scenarios are good use cases for the Google Drive CMS:
@@ -84,7 +84,7 @@ The following settings can be configured:
 
 
 ### _internals
-It might be best to just leave this alone. Values in this tab power current and future functionality at a low level. 
+It might be best to just leave this alone. Values in this tab power current and future functionality at a low level.
 
 ---
 
@@ -115,4 +115,4 @@ If sharing the CMS spreadsheet with other admins, consider locking down parts of
 Admins can rollback to previous iterations using Google Drive's [built in revision history](https://support.google.com/docs/answer/190843?hl=en). Restore a previous version of the sheet and then republish the document.
 
 ### Extending the CMS
-All of the Apps Scripts that power the CMS are baked in to the sheet an admin edits. These scripts can be accessed via `Tools > Script editor...` from the Google Sheets toolbar. We've tried to comment the .gs files where possible, so hack and extend at will! Changes to these scripts will only effect the current instance of the CMS. 
+All of the Apps Scripts that power the CMS are baked in to the sheet an admin edits. These scripts can be accessed via `Tools > Script editor...` from the Google Sheets toolbar. We've tried to comment the .gs files where possible, so hack and extend at will! Changes to these scripts will only effect the current instance of the CMS.
