@@ -59,10 +59,11 @@ Field types let admins add special functionality to a column. There are three fi
 - **Simple** (default): TRUE FALSE values are encoded to JSON as booleans, dates as date objects, numbers as integers and all other values as strings.
 - **Eval**: The contents of the cell is run against an `eval` function and stored as-is within the JSON object. Useful for complex data structures or nested objects
 - **List**: Provide a comma separated list of items within a cell and have them transformed in to a JavaScript array. For example, a cell containing `red, blue, green` will be transformed to the array `["red", "blue", "green"]`
+- **Google Sheet**: Point at another Google Sheet to create nested objects. See [Nested data](#nested-data) for more information
 
 n.b. A blank field type will behave like a simple field.
 
-We are looking to add more in the future, including foreign key relationships between multiple sheets. Eval is a good stopgap for more complex data, as it can accept raw JavaScript arrays or objects.
+We are looking to add more in the future, including foreign key relationships between multiple sheets. Eval is a good stopgap for more complex data, as it can accept raw JavaScript arrays or objects. *Update* Google Drive CMS now supports pointing at [other Google Sheets](#nested-data) to create neater nested objects.
 
 #### Content rows
 Each row beneath the field types will become an object within the JSON array sent to the designated API endpoint. These are the equivalent of a record within a traditional database.
@@ -89,6 +90,56 @@ It might be best to just leave this alone. Values in this tab power current and 
 ---
 
 ## Advanced features
+### Nested data
+*NEW*
+Use a field type of `Google Sheet` to nest other Google Drive CMS sheets inside of your POST data.
+
+1. *Create a secondary Google Drive CMS* The only sheet we really need is the default `CMS` sheet. You could alternatively create a blank Google Sheet with 2 rows (headers and field types), and your data underneath. The `SETTINGS`, `DOCUMENTATION` and `_internals` sheets on your secondary spreadsheet are not used.
+2. Copy and past the URL or spreadsheet ID in to your Drive CMS. Remember to set the field type to `Google Sheet`.
+3. Publish as normal
+
+Any data in the second spreadsheet will be added to your JSON payload as a nested array.
+
+#### Example
+
+*Google Sheet A (your Google Drive CMS instance)*
+| title  | nested |
+| -----  | ------ |
+| A cool title  | < URL of Google Sheet B >  |
+| Another cool title  |  |
+
+*Google Sheet B (the data you want to nest)*
+| FieldA  | FieldB |
+| -----  | ------ |
+| Content that is nested  | Content that is also nested  |
+| Second nested item  | Some information |
+
+*Result*
+```
+[
+  {
+    "title": "A cool title",
+    "nested": [
+      {
+        "FieldA": "Content that is nested",
+        "FieldB": "Content that is also nested"
+      },
+      {
+        "FieldA": "Second nested item",
+        "FieldB": "Some information"
+      }
+    ]
+  },
+  {
+    "title": "Another cool title",
+    "nested": ""
+  }
+]
+```
+
+You could probably nest sheets within sheets within sheets. That would probably work.
+Don't point spreadsheets at each other. That's going to end in a loop. That would probably be bad.
+
 ### Rich text
 It is possible to combine the Google Drive CMS core template with Google Docs to give an admin a rich text editor.
 

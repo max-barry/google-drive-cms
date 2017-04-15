@@ -5,7 +5,8 @@
   "version": "0.0.22",
   "keywords": ["cms", "google drive", "api", "cloud", "content management system"],
   "scripts": {
-    "postinstall": "bower install && grunt dist"
+    "postinstall": "bower install && grunt dist",
+    "deploy": "grunt dist && firebase deploy"
   },
   "dependencies": {
     "autoprefixer": "^6.2.0",
