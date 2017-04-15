@@ -96,6 +96,21 @@ Write a standard Google Doc using Google Doc's built in rich text capabilities (
 
 Google Docs are structured such that they can be exported straight to HTML. The CMS performs light sanitization of the converted HTML, but otherwise it is returned as a string within the JSON document upon publishing.
 
+#### Image replacement
+Images inserted in to Google Docs are hosted on Google's CDN. When the rich text is extracted you'll have `img` tags with a `src="https://cdn.google.com/..."`. That's okay-ish for small projects, or projects where images aren't vital. Google rate limit access to these URLs meaning every now and again your images will fail to load, as the Google CDN returns a 403.
+
+To get around this Google Drive CMS provides support for externally hosted images. In your rich text Google Doc that is being consumed by the drive CMS add the following inline:
+
+```
+This is the text content written in my Google Doc and here is my pretty image:
+
+[IMAGE:https://media.giphy.com/media/l46CqLVMWzaJUFPLW/giphy.gif]
+
+And then my text carries on like normal.
+```
+
+When the rich text is extracted and posted to your JSON api your `img` tag will now have a source of `https://media.giphy.com/media/l46CqLVMWzaJUFPLW/giphy.gif` (`[IMAGE:]` is replaced). Using externally hosted images also allows you to use image formats that a Google Doc doesn't natively support (Gifs!).
+
 ### Slugify
 A common CMS requirement is a slug field. A slug field can be used to build URLs on a site, and is often a concatenation of a title field with hyphens. For example, a news article called "Big Announcement Coming" would have a slug of "big-announcement-coming".
 
