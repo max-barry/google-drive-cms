@@ -62,7 +62,7 @@ Field types let admins add special functionality to a column. There are three fi
 
 n.b. A blank field type will behave like a simple field.
 
-We are looking to add more in the future, including foreign key relationships between multiple sheets. Eval is a good stopgap for more complex data, as it can except raw JavaScript arrays or objects.
+We are looking to add more in the future, including foreign key relationships between multiple sheets. Eval is a good stopgap for more complex data, as it can accept raw JavaScript arrays or objects.
 
 #### Content rows
 Each row beneath the field types will become an object within the JSON array sent to the designated API endpoint. These are the equivalent of a record within a traditional database.
