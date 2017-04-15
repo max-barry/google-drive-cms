@@ -106,12 +106,16 @@ Any data in the second spreadsheet will be added to your JSON payload as a neste
 
 | title  | nested |
 | -----  | ------ |
+| String  | Google Sheet |
+| -----  | ------ |
 | A cool title  | < URL of Google Sheet B >  |
 | Another cool title  |  |
 
 *Google Sheet B (the data you want to nest)*
 
 | FieldA  | FieldB |
+| -----  | ------ |
+| String  | String |
 | -----  | ------ |
 | Content that is nested  | Content that is also nested  |
 | Second nested item  | Some information |
