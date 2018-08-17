@@ -39,7 +39,7 @@
     "grunt-webpack": "^1.0.11",
     "html-loader": "^0.4.3",
     "jit-grunt": "^0.10.0",
-    "jquery": "^2.2.3",
+    "jquery": "^3.0.0",
     "layzr.js": "^2.0.4",
     "load-grunt-config": "^0.19.1",
     "lodash": "^4.11.2",
